@@ -19,7 +19,10 @@ steps:
 
 - task: NuGetCommand@2
   inputs:
+    command: 'restore'
     restoreSolution: '$(solution)'
+    feedsToUse: 'select'
+    vstsFeed: '83d235ec-f55d-493f-9d3d-e0dbe3f146e0/c230d331-6a55-48e0-a308-a30068911a62'
 
 - task: VSBuild@1
   inputs:
