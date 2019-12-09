@@ -1,6 +1,6 @@
 ﻿using System.Drawing;
 
-namespace FASUtils
+namespace FASUtils.Forms
 {
     public class ColorPalette
     {
