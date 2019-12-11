@@ -26,7 +26,7 @@ namespace TestProjekt
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Connectable.INTERNET.Check();
+            ControlState.RunTask(button1, () => Connectable.INTERNET.Check().Wait());
         }
     }
 }
