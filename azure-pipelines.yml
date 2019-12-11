@@ -33,7 +33,7 @@ steps:
 - task: NuGetCommand@2
   inputs:
     command: 'pack'
-    packagesToPack: '**/*.csproj'
+    packagesToPack: '**/FASUtils.Forms.csproj'
     versioningScheme: 'off'
 
 - task: NuGetCommand@2
