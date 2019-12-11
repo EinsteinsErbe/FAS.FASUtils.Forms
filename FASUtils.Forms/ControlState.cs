@@ -11,6 +11,7 @@ namespace FASUtils.Forms
     {
         private Control control;
         private string text;
+        private const string DefaultText = "working...";
 
         public ControlState(Control control, bool disable = false)
         {
@@ -31,7 +32,7 @@ namespace FASUtils.Forms
             Disable(alternateText);
         }
 
-        public void Disable(string alternateText = "working...")
+        public void Disable(string alternateText = DefaultText)
         {
             if (control.InvokeRequired)
             {
@@ -57,7 +58,7 @@ namespace FASUtils.Forms
             }
         }
 
-        public static Task RunTask(Control control, Action action, string alternateText = "working...")
+        public static Task RunTask(Control control, Action action, string alternateText = DefaultText)
         {
             ControlState cs = new ControlState(control);
             cs.Disable(alternateText);

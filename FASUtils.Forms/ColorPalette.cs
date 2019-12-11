@@ -6,7 +6,7 @@ namespace FASUtils.Forms
     {
         public static Color GOOD = Color.LightGreen;
         public static Color WARN = Color.Yellow;
-        public static Color BAD = Color.Tomato; 
+        public static Color BAD = Color.Tomato;
 
         public static Color FromBool(bool value)
         {

@@ -26,7 +26,12 @@ namespace TestProjekt
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ControlState.RunTask(button1, () => Connectable.INTERNET.Check().Wait());
+            ControlState.RunTask(button1, () =>
+            {
+                textProgressBar1.SetProgress(50, "checking...");
+                Connectable.INTERNET.Check().Wait();
+                textProgressBar1.SetProgress(100, "done");
+            });
         }
     }
 }

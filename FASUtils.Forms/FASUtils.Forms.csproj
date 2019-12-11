@@ -59,9 +59,20 @@
     <Compile Include="ControlState.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ResourceExtensions.cs" />
+    <Compile Include="TextProgressBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TextProgressBar.Designer.cs">
+      <DependentUpon>TextProgressBar.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TextProgressBar.resx">
+      <DependentUpon>TextProgressBar.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
