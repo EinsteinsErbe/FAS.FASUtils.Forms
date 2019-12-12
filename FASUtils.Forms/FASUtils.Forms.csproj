@@ -31,8 +31,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FASUtils, Version=1.0.4.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\FASUtils.1.0.4\lib\net461\FASUtils.dll</HintPath>
+    <Reference Include="FASUtils, Version=1.0.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FASUtils.1.0.6\lib\net461\FASUtils.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -59,11 +59,18 @@
     <Compile Include="ControlState.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ResourceExtensions.cs" />
+    <Compile Include="RootFolderBrowserDialog.cs" />
     <Compile Include="TextProgressBar.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="TextProgressBar.Designer.cs">
       <DependentUpon>TextProgressBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TreeViewV2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeViewV2.designer.cs">
+      <DependentUpon>TreeViewV2.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
