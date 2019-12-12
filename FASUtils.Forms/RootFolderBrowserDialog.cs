@@ -2,7 +2,7 @@
 using System.Reflection;
 using System.Windows.Forms;
 
-namespace GitClient
+namespace FASUtils.Forms
 {
     public class RootFolderBrowserDialog
     {
